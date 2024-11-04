@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    
+    const movieType = prompt("Enter the movie Type: ").toLowerCase();
+    const seatType = prompt("Enter the seat Type: ").toLowerCase();
+
+    switch (movieType) {
+        case "action":
+            switch (seatType) {
+                case "standardseat": console.log(`For ${seatType} the Charge is : 10rs`); break;
+
+                case "vipseat": console.log(`For ${seatType} the Charge is : 20rs`); break;
+            }
+            break;
+
+        case "comedy":
+            switch (seatType) {
+                case "standardseat": console.log(`For ${seatType} the Charge is : 8rs`); break;
+
+                case "vipseat": console.log(`For ${seatType} the Charge is : 15rs`); break;
+            }
+            break;
+
+        case "drama":
+            switch (seatType) {
+                case "standardseat": console.log(`For ${seatType} the Charge is : 6rs`); break;
+                case "vipseat": console.log(`For ${seatType} the Charge is : 12rs`); break;
+            }
+
+            break;
+    }
+
+    //////
+
+
+    
+    const productCatg = prompt("enter the category: ").toLowerCase()
+    const productType = prompt("enter the producttype: ").toLowerCase()
+    switch (productCatg) {
+        case "electronics":
+            switch (productType) {
+                case "mobile": console.log("5% Discount"); break;
+                case "laptop": console.log("10% Discount"); break;
+            }
+            break;
+
+        case "clothing":
+            switch (productType) {
+                case "men": console.log("15% Discount"); break;
+                case "women": console.log("20% Discount"); break;
+            }
+            break;
+
+
+        case "grocery":
+            switch (productType) {
+                case "fruits": console.log("5% Discount"); break;
+                case "vegetables": console.log("10% Discount"); break;
+
+            }
+            break;
+    }
+
+
+
+const travellcategory = prompt("enter the category").toLowerCase()
+const classtype = prompt("enter the category").toLowerCase()
+
+switch(travellcategory){
+    case "flight":
+        switch(classtype){
+            case "economy":console.log("THANKS FOR CHOOSING: "+ classtype);break;
+            case "business":console.log("THANKS FOR CHOOSING: "+ classtype);break;
+            
+        }
+        break;
+
+        case "train":
+        switch(classtype){
+            case "sleeper":console.log("THANKS FOR CHOOSING: "+ classtype);break;
+            case "acclass":console.log("THANKS FOR CHOOSING: "+ classtype);break;
+            
+        }
+break;
+        case "bus":
+        switch(classtype){
+            case "standard":console.log("THANKS FOR CHOOSING: "+ classtype);break;
+            case "luxury":console.log("THANKS FOR CHOOSING: "+ classtype);break;
+            
+        }
+
+break;
+}
+</script>
+
+</html>

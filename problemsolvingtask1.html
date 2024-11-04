@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    
+    let income = prompt("enter the amount")
+    if(income<= 250000){
+        console.log(`${income} : No Tax`);
+        
+    }
+    else if(income>250000 && income<=500000){
+        let exceedingamount = (income-250000)
+      let tax= exceedingamount*0.05
+      console.log(`${tax}`);
+        
+    }
+else if(income > 500000 && income<= 1000000){
+    
+    let exceedingamount = (income-500000)
+      let tax= exceedingamount*0.2+12500
+      console.log(`${tax}`);
+}
+
+else if(income > 1000000 ){
+    
+    let exceedingamount = (income-1000000)
+      let tax= exceedingamount*0.3+112500
+      console.log(`${tax}`);
+}
+
+
+    
+        let units = parseInt(prompt("enter the units"));
+        if (units <= 100) {
+            
+            console.log(units * 1);
+
+        }
+    
+        else if (units > 100 && units <= 300) {
+            if (units >= 101 && units <= 200) {
+                console.log(units * 1);
+    
+            }
+            else if (units >= 201 && units <= 300) {
+                
+                console.log(200+(units - 200) *1.5);
+    
+            }
+        }
+    else if(units>300){
+       
+    console.log((100 * 1) + (200 * 1.5) + ((units - 300) * 2));
+    
+    }
+    
+    
+      
+
+
+    let weight = prompt("enter the weight of parcel")
+    let destination = prompt("enter the destination").toLocaleLowerCase()
+
+    if (weight <= 1) {
+
+        if (destination == "local") {
+            console.log(    `${weight * 5}`);
+
+        }
+        else if (destination == "national") {
+            console.log(`${weight * 8}`);
+        }
+
+        else if (destination == "international") {
+            console.log(`${weight * 15}`);
+        }
+        else {
+            console.log("invalid");
+
+        }
+    }
+
+    else if (weight>1 && weight<=5) {
+
+        if (destination == "local") {
+            console.log(`${weight * 10}`);
+        }
+
+        else if (destination == "national") {
+            console.log(`${weight * 15}`);
+        }
+
+        else if (destination == "international") {
+            console.log(`${weight * 30}`);
+        }
+    }
+
+    else if (weight > 5 && weight <= 10) {
+
+        if (destination == "local") {
+            console.log(`${weight * 20}`);
+        }
+
+        else if (destination == "national") {
+            console.log(`${weight * 25}`);
+        }
+
+        else if (destination == "international") {
+            console.log(`${weight * 50}`);
+        }
+        
+    }
+    else if (weight > 10) {
+        console.log("INVALID");
+
+    }
+
+
+</script>
+
+</html>
