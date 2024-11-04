@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><br><br>
+    
+    <h2>THE TASK OUTPUT WILL BE IN CONSOLE AND APPLICATION(LOCAL STORAGE)</h2>
+    <script>
+        //method() => pre defined function
+        let objDet = {
+            name : "chinna",
+            age: 20,
+            city:"Bgpalem"
+        }
+
+        let str = JSON.stringify(objDet)
+        localStorage.setItem("name", str)
+
+        let store = localStorage.getItem("name")
+        // localStorage.getItem(str)
+        console.log(store);
+        
+        objDet.lang = "javascript"
+        console.log(objDet);
+        
+
+
+
+    </script>
+</body>
+</html>
